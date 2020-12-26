@@ -14,3 +14,9 @@ VALUES ('Wadoh lupa beli camilan', 'test-image5.jpg', 1);
 
 -- Tampilkan seluruh data content berdasarkan user tertentu
 SELECT * FROM post_tb WHERE id_user=1;
+
+
+-- Ubah salah satu data user
+UPDATE users_tb SET 
+name='Alfredo Bangun', photo='aldo.jpg',email="aldo@localhost.com", password="rahasia"
+WHERE id=1;
