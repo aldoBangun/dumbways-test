@@ -16,4 +16,4 @@ const isiArray = (a, b) => {
    console.log(result)
 }
 
-isiArray(2, 2)
+isiArray(3, 5)
