@@ -10,10 +10,10 @@ module.exports = {
          }
       })
    },
-   login: (user, callback) => {
+   login: (email, callback) => {
       sql.query(
-         'SELECT * FROM users_tb WHERE email=? AND password=?', 
-         [user.email, user.password],
+         'SELECT * FROM users_tb WHERE email=?', 
+         [email],
          (err, results) => {
             if (err) {
                callback(err)
